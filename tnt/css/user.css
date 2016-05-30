@@ -1,0 +1,47 @@
+fieldset {
+	font-family: oxygen;
+	width: 500px;
+	margin: 100px auto 0 auto;
+	padding: 50px 50px 20px 50px;
+	border: 1px solid #4D407A;
+}
+
+fieldset > legend {
+	text-align: center;
+	color: #4D407A;
+	font-size: 1.35rem;
+}
+
+form > input {
+	margin: 0 auto;
+	display: block;
+	font-family: oxygen;
+	font-weight: 100;
+}
+
+form > input#url {
+	width: 250px;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 1.5px;
+}
+
+form > input#s {
+	color: #4D407A;
+	padding: 8px 15px;
+	border: 1px solid #ececec;
+	border-radius: 2px;
+	font-family: oxygen;
+	font-weight: normal;
+	font-size: .85rem;
+	transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+	text-decoration: none;
+	background-color: white;
+}
+
+form > input#s:hover {
+	background-color: #4D407A;
+	color: white;
+	text-decoration: none;
+	border: 1px solid #4D407A;
+}

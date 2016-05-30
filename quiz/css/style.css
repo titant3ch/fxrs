@@ -1,0 +1,53 @@
+body { 
+	font: 14px Georgia, serif; 
+}
+
+#page-wrap { 
+	width: 700px; 
+	margin: 0 auto; 
+}
+
+h1 { 
+	margin: 25px 0;
+	font: 20px Georgia, Serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+h2 { 
+	font: 20px Georgia, Serif;
+	letter-spacing: 2.5px;
+}
+
+hr {
+    margin: 2rem auto 3rem auto;
+    border: 2px solid #4D407A;
+    width: 12rem;
+}
+
+#quizie input {
+    vertical-align: middle;
+}
+
+#quizie ol {
+   margin: 0 0 10px 20px;
+   font-size: 20px;
+}
+
+#quizie ol li {
+   margin: 0 0 20px 0;
+}
+
+#quizie ol li div {
+   padding: 4px 0;
+   font-size: 15px;
+}
+
+#quizie h3 {
+   font-size: 17px; margin: 0 0 1px 0; color: #666;
+}
+
+#results {
+    font: 44px Georgia, Serif;
+}

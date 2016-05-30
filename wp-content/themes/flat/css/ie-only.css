@@ -1,0 +1,16 @@
+h1 {
+	color: #ec6f66;
+	margin: 50px 20%!important;
+	text-align: center;
+	font-size: 25px;
+	font-family: monospace;
+	font-weight: normal;
+}
+.weather, #page, section, .navigation, hr, article, .bg, .circle{
+	display: none!important;
+}
+
+img {
+	margin: 0 auto;
+	display: block;
+}
