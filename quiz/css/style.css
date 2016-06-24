@@ -50,4 +50,37 @@ hr {
 
 #results {
     font: 44px Georgia, Serif;
+    text-align: center;
+}
+
+/* Summary */
+
+h3 {
+    font: 20px Georgia, Serif;
+    letter-spacing: 2.5px;
+    text-align: center;   
+}
+
+table {
+    margin: 0 auto;
+    width: 730px;
+    /* border: 1px solid white; */
+    font-family: oxygen;
+    font-weight: 100;
+    color: #0971B2;
+}
+
+table > tbody > tr:nth-child(1) > th {
+    border-bottom: 1px solid #0971B2;
+    font-size: 1.3rem;
+    /* font-weight: 100; */
+}
+
+table > tbody > tr > td {
+    padding: 8px 10px;
+}
+
+table > tbody > tr:nth-child(odd) > td {
+    background-color: #0971B2;
+    color: white;
 }

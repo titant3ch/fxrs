@@ -7,6 +7,9 @@
 	<title>FXRS Quiz - Result</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<meta http-equiv="refresh" content="300" >
+
 </head>
 
 <body>
@@ -14,6 +17,8 @@
 	<div id="page-wrap">
 
 		<h1>Final Quiz Results</h1>
+
+		<hr />
 		
         <?php
 
@@ -30,14 +35,24 @@
 			$answer3 = $_POST['q3-answers'];
 			$answer4 = $_POST['q4-answers'];
 			$answer5 = $_POST['q5-answers'];
+			$answer6 = $_POST['q6-answers'];
+			$answer7 = $_POST['q7-answers'];
+			$answer8 = $_POST['q8-answers'];
+			$answer9 = $_POST['q9-answers'];
+			$answer10 = $_POST['q10-answers'];
 
 			$totalCorrect = 0;
 
-			if ($answer1 == "A") { $totalCorrect++; }
-			if ($answer2 == "A") { $totalCorrect++; }
+			if ($answer1 == "C") { $totalCorrect++; }
+			if ($answer2 == "B") { $totalCorrect++; }
 			if ($answer3 == "D") { $totalCorrect++; }
-			if ($answer4 == "B") { $totalCorrect++; }
+			if ($answer4 == "A") { $totalCorrect++; }
 			if ($answer5 == "B") { $totalCorrect++; }
+			if ($answer6 == "B") { $totalCorrect++; }
+			if ($answer7 == "D") { $totalCorrect++; }
+			if ($answer8 == "B") { $totalCorrect++; }
+			if ($answer9 == "D") { $totalCorrect++; }
+			if ($answer10 == "C") { $totalCorrect++; }
 
 			$con = mysql_connect("127.0.0.1", "root", "Fedex123");
 
@@ -62,20 +77,20 @@
 			$answers = implode(",", $_POST);
 			$time = date("g:ia m/d/y");
 			
-			$grade = $totalCorrect * 20;
+			$grade = $totalCorrect * 10;
 
 			$sql = "INSERT INTO Results (Agent, Host, Answers, TotalCorrect, Grade, Time) VALUES (
 			'" . mysql_real_escape_string($user, $con) . "',
 			'" . mysql_real_escape_string($hostname, $con) . "',
 			'" . mysql_real_escape_string($answers, $con) . "',
-			'" . mysql_real_escape_string($totalCorrect, $con) . " of 5',
+			'" . mysql_real_escape_string($totalCorrect, $con) . " of 10',
 			'" . mysql_real_escape_string($grade, $con) . "',
 			'" . mysql_real_escape_string($time, $con) . "'
 			)";
 
 			mysql_query($sql, $con);
 
-			echo "<div id='results'>$totalCorrect / 5 correct</div>";
+			echo "<div id='results'>$totalCorrect / 10 correct</div>";
 			echo "<div id='results'>$user, your final grade is $grade%</div>";
             
         ?>

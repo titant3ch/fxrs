@@ -32,4 +32,5 @@
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/ZeroClipboard.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/backtotop.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/prism.js"></script>
 <?php get_footer(); ?>
