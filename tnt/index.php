@@ -24,7 +24,7 @@
 	<legend>Tracking Number Tester</legend>
 
 	<form onSubmit="return process();">
-		<input id="url" type="text" name="url">
+		<input id="url" type="text" name="url" placeholder="Tracking Number">
 		<br>
 		<input id="s" type="submit" value="Search">
 	</form>
