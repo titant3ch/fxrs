@@ -26,7 +26,7 @@
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/backtotop.js"></script>
 
 <script type="text/javascript">
-	var ids=["ten", "tensix", "eleven", "twelve", "thirteen", "fourteen", "fifteen"];
+	var ids=["ten", "tensix", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen"];
 	var dropDown = document.getElementById("versions");
 
 	dropDown.onchange = function(){

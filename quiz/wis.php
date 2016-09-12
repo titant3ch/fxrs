@@ -25,27 +25,27 @@
 
         <hr />
 		
-		<form action="grade2.php" method="post" id="quizie">
+		<form action="wisGrade.php" method="post" id="quizie">
 		
             <ol>
             
                 <li>
                 
-                    <h3>What are the 2 recommended fields that must be added to produce a shipping label and save on desktop</h3>
+                    <h3>Customer is requesting their HUB ID for SmartPost. They are using TEST credentials. What HUB ID should you provide?</h3>
                     
                     <div>
                         <input type="radio" name="q1-answers" id="q1-answers-A" value="A" />
-                        <label for="q1-answers-A">187 & 538</label>
+                        <label for="q1-answers-A">5185</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q1-answers" id="q1-answers-B" value="B" />
-                        <label for="q1-answers-B">498 & 3025</label>
+                        <label for="q1-answers-B">5531</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q1-answers" id="q1-answers-C" value="C" />
-                        <label for="q1-answers-C">187 & 537</label>
+                        <label for="q1-answers-C">5061</label>
                     </div>
                     
                     <div>
@@ -57,52 +57,52 @@
                 
                <li>
                 
-                    <h3>Please choose the correct query that would allow you to locate an express shipment from the database</h3>
+                    <h3>When creating a certificaiton request, what is the main question, if not answered correclty, that could cause delays?</h3>
                     
                     <div>
                         <input type="radio" name="q2-answers" id="q2-answers-A" value="A" />
-                        <label for="q2-answers-A">SELECT * FROM "FEDEX"."DomesticShipment" where TrackingNumber = 123456789</label>
+                        <label for="q2-answers-A">Will the customer's application be generating shipping labels?</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q2-answers" id="q2-answers-B" value="B" />
-                        <label for="q2-answers-B">SELECT * FROM "FEDEX"."DomesticShipment" where TrkngNbr = 123456789</label>
+                        <label for="q2-answers-B">Will the customer register as a "Corporate Developer" or a "Consultant"?</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q2-answers" id="q2-answers-C" value="C" />
-                        <label for="q2-answers-C">SELECT * FROM "FEDEX"."ExpressShipment" where TrkngNbr = 123456789</label>
+                        <label for="q2-answers-C">Will the customer be shipping Express, Ground, or both?</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q2-answers" id="q2-answers-D" value="D" />
-                        <label for="q2-answers-D">SELECT * FROM "FEDEX"."Shipment" TrkngNbr = 123456789</label>
+                        <label for="q2-answers-D">Is the Customer requesting Pickup Services?</label>
                     </div>
                 
                 </li>
 
                 <li>
                 
-                    <h3>What application allows you to validate a server transaction?</h3>
+                    <h3>When creating a consultation request, what item MUST the customer have before we can submit the request?</h3>
                     
                     <div>
                         <input type="radio" name="q3-answers" id="q3-answers-A" value="A" />
-                        <label for="q3-answers-A">AdminTool</label>
+                        <label for="q3-answers-A">Authentication Key</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q3-answers" id="q3-answers-B" value="B" />
-                        <label for="q3-answers-B">ESB Production</label>
+                        <label for="q3-answers-B">Meter Number</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q3-answers" id="q3-answers-C" value="C" />
-                        <label for="q3-answers-C">ESB Test</label>
+                        <label for="q3-answers-C">Test Account</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q3-answers" id="q3-answers-D" value="D" />
-                        <label for="q3-answers-D">TransEdit</label>
+                        <label for="q3-answers-D">Production Account</label>
                     </div>
                 
                 </li>
@@ -135,7 +135,7 @@
 
                 <li>
                 
-                    <h3>Chose a Web Service Standard Service</h3>
+                    <h3>Chose a Web Service Advance Service</h3>
                     
                     <div>
                         <input type="radio" name="q5-answers" id="q5-answers-A" value="A" />
@@ -144,24 +144,24 @@
                     
                     <div>
                         <input type="radio" name="q5-answers" id="q5-answers-B" value="B" />
-                        <label for="q5-answers-B">Tracking</label>
+                        <label for="q5-answers-B">Rating</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q5-answers" id="q5-answers-C" value="C" />
-                        <label for="q5-answers-C">Pickup</label>
+                        <label for="q5-answers-C">Tracking</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q5-answers" id="q5-answers-D" value="D" />
-                        <label for="q5-answers-D">Both B and C</label>
+                        <label for="q5-answers-D">None of the above</label>
                     </div>
                 
                 </li>
 
                 <li>
                 
-                    <h3>Jason is adding an LTL account to FXCT, what address should he use?</h3>
+                    <h3>When adding an LTL account to FXCT, what address should he use?</h3>
                     
                     <div>
                         <input type="radio" name="q6-answers" id="q6-answers-A" value="A" />
@@ -187,104 +187,94 @@
 
                 <li>
                 
-                    <h3>Customer is moving from L6 to Production. What steps should you follow to change the communication level?</h3>
+                    <h3>A customer has provided you with a test account, what screen should you login to via BlueZone/3270?</h3>
                     
                     <div>
                         <input type="radio" name="q7-answers" id="q7-answers-A" value="A" />
-                        <label for="q7-answers-A">Navigate to FedEx_Comm > commsetup > ctrl + T > change level</label>
+                        <label for="q7-answers-A">PTSB</label>
                     </div>
                     
                     <div>
-                        <input type="radio" name="q7-answers" id="q7-answers-B" value="B" />
-                        <label for="q7-answers-B">Open AdminTool > search by account > switch level</label>
+                        <input type="radio" name="q6-answers" id="q7-answers-B" value="B" />
+                        <label for="q7-answers-B">IMS</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q7-answers" id="q7-answers-C" value="C" />
-                        <label for="q7-answers-C">Have the customer contact CSP</label>
+                        <label for="q7-answers-C">ITSB</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q7-answers" id="q7-answers-D" value="D" />
-                        <label for="q7-answers-D">Navigate to FedEx_bin > open commsetup > ctrl + T > change level</label>
+                        <label for="q7-answers-D">None of the above</label>
                     </div>
                 
                 </li>
 
                 <li>
                 
-                    <h3>When creating a Ground shipment billing Collect. What value should be used for payment type?</h3>
+                    <h3>When creating a ship request via Web Services, what value should be used for an international ground shipment?</h3>
                     
                     <div>
                         <input type="radio" name="q8-answers" id="q8-answers-A" value="A" />
-                        <label for="q8-answers-A">1</label>
+                        <label for="q8-answers-A">INTERNATIONAL_GROUND</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q8-answers" id="q8-answers-B" value="B" />
-                        <label for="q8-answers-B">2</label>
+                        <label for="q8-answers-B">SAME_DAY</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q8-answers" id="q8-answers-C" value="C" />
-                        <label for="q8-answers-C">3</label>
+                        <label for="q8-answers-C">FEDEX_INTERNATIONAL_GROUND</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q8-answers" id="q8-answers-D" value="D" />
-                        <label for="q8-answers-D">4</label>
+                        <label for="q8-answers-D">FEDEX_GROUND</label>
                     </div>
                 
                 </li>
 
                 <li>
                 
-                    <h3>Pick a query that would allow you to find, by tracking #, how the shipment was billed. This is an ground shipment</h3>
+                    <h3>What data sources are available when running a batch rate request via FXCT?</h3>
                     
                     <div>
                         <input type="radio" name="q9-answers" id="q9-answers-A" value="A" />
-                        <label for="q9-answers-A">SELECT PayType, * FROM "FEDEX"."DomesticShipment" where TrackingNumber = 653548379559</label>
+                        <label for="q9-answers-A">ODBC, quickbooks and Excel</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q9-answers" id="q9-answers-B" value="B" />
-                        <label for="q9-answers-B">SELECT PayType, * FROM "FEDEX"."GroundShipments" where TrkNbr = 653548379559</label>
+                        <label for="q9-answers-B">HTML, CSV and Excel</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q9-answers" id="q9-answers-C" value="C" />
-                        <label for="q9-answers-C">SELECT PaymentType, * FROM "FEDEX"."GroundShipment" where TrackingNumber = 653548379559</label>
+                        <label for="q9-answers-C">ODBC, Delimited Text and Excel</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q9-answers" id="q9-answers-D" value="D" />
-                        <label for="q9-answers-D">SELECT PayType, * FROM "FEDEX"."GroundShipment" where TrackingNumber = 653548379559</label>
+                        <label for="q9-answers-D">None of the above</label>
                     </div>
                 
                 </li>
 
                 <li>
                 
-                    <h3>Lets assume you found the shipment above, great. What status code should be seen if the shipment was close?</h3>
+                    <h3>Can we track LIVE shipments via L6 in Web Services?</h3>
                     
                     <div>
                         <input type="radio" name="q10-answers" id="q10-answers-A" value="A" />
-                        <label for="q10-answers-A">1</label>
+                        <label for="q10-answers-A">True</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q10-answers" id="q10-answers-B" value="B" />
-                        <label for="q10-answers-B">2</label>
-                    </div>
-                    
-                    <div>
-                        <input type="radio" name="q10-answers" id="q10-answers-C" value="C" />
-                        <label for="q10-answers-C">3</label>
-                    </div>
-                    
-                    <div>
-                        <input type="radio" name="q10-answers" id="q10-answers-D" value="D" />
-                        <label for="q10-answers-D">4</label>
+                        <label for="q10-answers-B">False</label>
                     </div>
                 
                 </li>

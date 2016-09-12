@@ -171,7 +171,7 @@ Template Name: Our Team
 				<p>709617</p>
 			</div>
 		</div>
-		<div class="flipperAgent">
+		<!-- <div class="flipperAgent">
 			<div class="front">
 				<img src="<?php bloginfo('template_url'); ?>/img/Avatar/DrakeFXRS.png" alt="">
 			</div>
@@ -179,7 +179,7 @@ Template Name: Our Team
 				<p>Drake Cooper</p>
 				<p>869511</p>
 			</div>
-		</div>
+		</div> -->
 		<div class="flipperAgent">
 			<div class="front">
 				<img src="<?php bloginfo('template_url'); ?>/img/Avatar/DonSims.png" alt="">
@@ -198,7 +198,7 @@ Template Name: Our Team
 				<p>758218</p>
 			</div>
 		</div>
-		<div class="flipperAgent">
+		<!-- <div class="flipperAgent">
 			<div class="front">
 				<img src="<?php bloginfo('template_url'); ?>/img/Avatar/GregThompson.png" alt="">
 			</div>
@@ -206,7 +206,7 @@ Template Name: Our Team
 				<p>Greg Thompson</p>
 				<p>742289</p>
 			</div>
-		</div>
+		</div> -->
 		<div class="flipperAgent">
 			<div class="front">
 				<img src="<?php bloginfo('template_url'); ?>/img/Avatar/Ira.png" alt="">
@@ -244,7 +244,7 @@ Template Name: Our Team
 				<p>Secretly works with State Farm!!</p>
 			</div>
 		</div> -->
-		<div class="flipperAgent">
+		<!-- <div class="flipperAgent">
 			<div class="front">
 				<img src="<?php bloginfo('template_url'); ?>/img/Avatar/Janna.png" alt="">
 			</div>
@@ -252,7 +252,7 @@ Template Name: Our Team
 				<p>Janna Pinion</p>
 				<p>747131</p>
 			</div>
-		</div>
+		</div> -->
 		<div class="flipperAgent">
 			<div class="front">
 				<img src="<?php bloginfo('template_url'); ?>/img/Avatar/Jeff.png" alt="">
@@ -260,6 +260,15 @@ Template Name: Our Team
 			<div class="back">
 				<p>Jeff Dupree</p>
 				<p>910469</p>
+			</div>
+		</div>
+		<div class="flipperAgent">
+			<div class="front">
+				<img src="<?php bloginfo('template_url'); ?>/img/Avatar/JessieMcavin.png" alt="">
+			</div>
+			<div class="back">
+				<p>Jessica McAvin</p>
+				<p></p>
 			</div>
 		</div>
 		<!-- <div class="flipperAgent">
@@ -280,7 +289,7 @@ Template Name: Our Team
 				<p>925185</p>
 			</div>
 		</div> -->
-		<div class="flipperAgent">
+		<!-- <div class="flipperAgent">
 			<div class="front">
 				<img src="<?php bloginfo('template_url'); ?>/img/Avatar/Kwabena.png" alt="">
 			</div>
@@ -288,7 +297,7 @@ Template Name: Our Team
 				<p>Kwabena Aikins-Kumi</p>
 				<p>910464</p>
 			</div>
-		</div>
+		</div> -->
 		<!-- <div class="flipperAgent">
 			<div class="front">
 				<img src="<?php bloginfo('template_url'); ?>/img/Avatar/LengTran.png" alt="">
@@ -323,6 +332,24 @@ Template Name: Our Team
 			<div class="back">
 				<p>Matthew Barth</p>
 				<p>815642</p>
+			</div>
+		</div>
+		<div class="flipperAgent">
+			<div class="front">
+				<img src="<?php bloginfo('template_url'); ?>/img/Avatar/MarkEdrys.png" alt="">
+			</div>
+			<div class="back">
+				<p>Mark Edrys</p>
+				<p></p>
+			</div>
+		</div>
+		<div class="flipperAgent">
+			<div class="front">
+				<img src="<?php bloginfo('template_url'); ?>/img/Avatar/MercedesWidman.png" alt="">
+			</div>
+			<div class="back">
+				<p>Mercedes Widman</p>
+				<p></p>
 			</div>
 		</div>
 		<div class="flipperAgent">

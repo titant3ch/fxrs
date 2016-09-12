@@ -25,91 +25,91 @@
 
         <hr />
 		
-		<form action="grade2.php" method="post" id="quizie">
+		<form action="grade.php" method="post" id="quizie">
 		
             <ol>
             
                 <li>
                 
-                    <h3>What are the 2 recommended fields that must be added to produce a shipping label and save on desktop</h3>
+                    <h3>What transaction code should I be using for an End of day close?</h3>
                     
                     <div>
                         <input type="radio" name="q1-answers" id="q1-answers-A" value="A" />
-                        <label for="q1-answers-A">187 & 538</label>
+                        <label for="q1-answers-A">001</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q1-answers" id="q1-answers-B" value="B" />
-                        <label for="q1-answers-B">498 & 3025</label>
+                        <label for="q1-answers-B">004</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q1-answers" id="q1-answers-C" value="C" />
-                        <label for="q1-answers-C">187 & 537</label>
+                        <label for="q1-answers-C">007</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q1-answers" id="q1-answers-D" value="D" />
-                        <label for="q1-answers-D">None of the above</label>
+                        <label for="q1-answers-D">009</label>
                     </div>
                 
                 </li>
                 
                <li>
                 
-                    <h3>Please choose the correct query that would allow you to locate an express shipment from the database</h3>
+                    <h3>What would be a properly configured transaction for requesting a tracking number?</h3>
                     
                     <div>
                         <input type="radio" name="q2-answers" id="q2-answers-A" value="A" />
-                        <label for="q2-answers-A">SELECT * FROM "FEDEX"."DomesticShipment" where TrackingNumber = 123456789</label>
+                        <label for="q2-answers-A">0,"004"1,"Assign Tracking Number"498,"550192"499,"1"99,""</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q2-answers" id="q2-answers-B" value="B" />
-                        <label for="q2-answers-B">SELECT * FROM "FEDEX"."DomesticShipment" where TrkngNbr = 123456789</label>
+                        <label for="q2-answers-B">0,"004"1,"Assign Tracking Number"498,"550192"499,"1"99</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q2-answers" id="q2-answers-C" value="C" />
-                        <label for="q2-answers-C">SELECT * FROM "FEDEX"."ExpressShipment" where TrkngNbr = 123456789</label>
+                        <label for="q2-answers-C">0,"007"1,"Assign Tracking Number"498,"550192"499,"1"99,""</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q2-answers" id="q2-answers-D" value="D" />
-                        <label for="q2-answers-D">SELECT * FROM "FEDEX"."Shipment" TrkngNbr = 123456789</label>
+                        <label for="q2-answers-D">"004"1,"Assign Tracking Number"498,"550192"499,"1"99,""</label>
                     </div>
                 
                 </li>
 
                 <li>
                 
-                    <h3>What application allows you to validate a server transaction?</h3>
+                    <h3>Using a version 5 URSA table, what file is formated correctly?</h3>
                     
                     <div>
                         <input type="radio" name="q3-answers" id="q3-answers-A" value="A" />
-                        <label for="q3-answers-A">AdminTool</label>
+                        <label for="q3-answers-A">Z9081951</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q3-answers" id="q3-answers-B" value="B" />
-                        <label for="q3-answers-B">ESB Production</label>
+                        <label for="q3-answers-B">V9081951</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q3-answers" id="q3-answers-C" value="C" />
-                        <label for="q3-answers-C">ESB Test</label>
+                        <label for="q3-answers-C">X9081951</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q3-answers" id="q3-answers-D" value="D" />
-                        <label for="q3-answers-D">TransEdit</label>
+                        <label for="q3-answers-D">Z5081941</label>
                     </div>
                 
                 </li>
 
                 <li>
                 
-                    <h3>What tool allows you to view what WIS services are enabled by the authentication key?</h3>
+                    <h3>What tool allows you to validate server transactions?</h3>
                     
                     <div>
                         <input type="radio" name="q4-answers" id="q4-answers-A" value="A" />
@@ -135,47 +135,47 @@
 
                 <li>
                 
-                    <h3>Chose a Web Service Standard Service</h3>
+                    <h3>What to recommended fields are used to save shipping label to customers desktop?</h3>
                     
                     <div>
                         <input type="radio" name="q5-answers" id="q5-answers-A" value="A" />
-                        <label for="q5-answers-A">Shipping</label>
+                        <label for="q5-answers-A">187 & 535</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q5-answers" id="q5-answers-B" value="B" />
-                        <label for="q5-answers-B">Tracking</label>
+                        <label for="q5-answers-B">137 & 537</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q5-answers" id="q5-answers-C" value="C" />
-                        <label for="q5-answers-C">Pickup</label>
+                        <label for="q5-answers-C">187 & 538</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q5-answers" id="q5-answers-D" value="D" />
-                        <label for="q5-answers-D">Both B and C</label>
+                        <label for="q5-answers-D">187 & 537</label>
                     </div>
                 
                 </li>
 
                 <li>
                 
-                    <h3>Jason is adding an LTL account to FXCT, what address should he use?</h3>
+                    <h3>When using field 1670, what value would be used for 1lbs?</h3>
                     
                     <div>
                         <input type="radio" name="q6-answers" id="q6-answers-A" value="A" />
-                        <label for="q6-answers-A">Shipping</label>
+                        <label for="q6-answers-A">100</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q6-answers" id="q6-answers-B" value="B" />
-                        <label for="q6-answers-B">Mailing</label>
+                        <label for="q6-answers-B">10</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q6-answers" id="q6-answers-C" value="C" />
-                        <label for="q6-answers-C">Billing</label>
+                        <label for="q6-answers-C">1</label>
                     </div>
                     
                     <div>
@@ -187,104 +187,94 @@
 
                 <li>
                 
-                    <h3>Customer is moving from L6 to Production. What steps should you follow to change the communication level?</h3>
+                    <h3>What value should be used, for Smartpost service type, when using field 1274?</h3>
                     
                     <div>
                         <input type="radio" name="q7-answers" id="q7-answers-A" value="A" />
-                        <label for="q7-answers-A">Navigate to FedEx_Comm > commsetup > ctrl + T > change level</label>
+                        <label for="q7-answers-A">SPXREF</label>
                     </div>
                     
                     <div>
-                        <input type="radio" name="q7-answers" id="q7-answers-B" value="B" />
-                        <label for="q7-answers-B">Open AdminTool > search by account > switch level</label>
+                        <input type="radio" name="q6-answers" id="q7-answers-B" value="B" />
+                        <label for="q7-answers-B">SmartPost</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q7-answers" id="q7-answers-C" value="C" />
-                        <label for="q7-answers-C">Have the customer contact CSP</label>
+                        <label for="q7-answers-C">1</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q7-answers" id="q7-answers-D" value="D" />
-                        <label for="q7-answers-D">Navigate to FedEx_bin > open commsetup > ctrl + T > change level</label>
+                        <label for="q7-answers-D">None of the above</label>
                     </div>
                 
                 </li>
 
                 <li>
                 
-                    <h3>When creating a Ground shipment billing Collect. What value should be used for payment type?</h3>
+                    <h3>What transaction code should I be using for a ship request?</h3>
                     
                     <div>
                         <input type="radio" name="q8-answers" id="q8-answers-A" value="A" />
-                        <label for="q8-answers-A">1</label>
+                        <label for="q8-answers-A">007</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q8-answers" id="q8-answers-B" value="B" />
-                        <label for="q8-answers-B">2</label>
+                        <label for="q8-answers-B">020</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q8-answers" id="q8-answers-C" value="C" />
-                        <label for="q8-answers-C">3</label>
+                        <label for="q8-answers-C">023</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q8-answers" id="q8-answers-D" value="D" />
-                        <label for="q8-answers-D">4</label>
+                        <label for="q8-answers-D">120</label>
                     </div>
                 
                 </li>
 
                 <li>
                 
-                    <h3>Pick a query that would allow you to find, by tracking #, how the shipment was billed. This is an ground shipment</h3>
+                    <h3>When using field 23, what value should be used when billing recipient for a ground shipment?</h3>
                     
                     <div>
                         <input type="radio" name="q9-answers" id="q9-answers-A" value="A" />
-                        <label for="q9-answers-A">SELECT PayType, * FROM "FEDEX"."DomesticShipment" where TrackingNumber = 653548379559</label>
+                        <label for="q9-answers-A">5</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q9-answers" id="q9-answers-B" value="B" />
-                        <label for="q9-answers-B">SELECT PayType, * FROM "FEDEX"."GroundShipments" where TrkNbr = 653548379559</label>
+                        <label for="q9-answers-B">3</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q9-answers" id="q9-answers-C" value="C" />
-                        <label for="q9-answers-C">SELECT PaymentType, * FROM "FEDEX"."GroundShipment" where TrackingNumber = 653548379559</label>
+                        <label for="q9-answers-C">2</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q9-answers" id="q9-answers-D" value="D" />
-                        <label for="q9-answers-D">SELECT PayType, * FROM "FEDEX"."GroundShipment" where TrackingNumber = 653548379559</label>
+                        <label for="q9-answers-D">None of the above</label>
                     </div>
                 
                 </li>
 
                 <li>
                 
-                    <h3>Lets assume you found the shipment above, great. What status code should be seen if the shipment was close?</h3>
+                    <h3>Anyone can use FSMS?</h3>
                     
                     <div>
                         <input type="radio" name="q10-answers" id="q10-answers-A" value="A" />
-                        <label for="q10-answers-A">1</label>
+                        <label for="q10-answers-A">True</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q10-answers" id="q10-answers-B" value="B" />
-                        <label for="q10-answers-B">2</label>
-                    </div>
-                    
-                    <div>
-                        <input type="radio" name="q10-answers" id="q10-answers-C" value="C" />
-                        <label for="q10-answers-C">3</label>
-                    </div>
-                    
-                    <div>
-                        <input type="radio" name="q10-answers" id="q10-answers-D" value="D" />
-                        <label for="q10-answers-D">4</label>
+                        <label for="q10-answers-B">False</label>
                     </div>
                 
                 </li>
