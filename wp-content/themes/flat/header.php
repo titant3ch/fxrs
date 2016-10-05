@@ -17,7 +17,7 @@
         <!-- <meta http-equiv="refresh" content="2" > -->
  
     </head>
-    <?php include_once("analyticstracking.php") ?>
+    
 <body>
 
 <header>
