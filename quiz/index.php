@@ -25,7 +25,7 @@
 
         <hr />
 		
-		<form action="grade2.php" method="post" id="quizie">
+		<form action="grade.php" method="post" id="quizie">
 		
             <ol>
             
@@ -239,7 +239,7 @@
 
                 <li>
                 
-                    <h3>Pick a query that would allow you to find, by tracking #, how the shipment was billed. This is an ground shipment</h3>
+                    <h3>Pick a query that would allow you to find, by tracking #, how the shipment was billed. This is a ground shipment</h3>
                     
                     <div>
                         <input type="radio" name="q9-answers" id="q9-answers-A" value="A" />
@@ -265,7 +265,7 @@
 
                 <li>
                 
-                    <h3>Lets assume you found the shipment above, great. What status code should be seen if the shipment was close?</h3>
+                    <h3>Lets assume you found the shipment above, great. What status code should be seen if the shipment was deleted?</h3>
                     
                     <div>
                         <input type="radio" name="q10-answers" id="q10-answers-A" value="A" />
@@ -274,17 +274,17 @@
                     
                     <div>
                         <input type="radio" name="q10-answers" id="q10-answers-B" value="B" />
-                        <label for="q10-answers-B">2</label>
+                        <label for="q10-answers-B">3</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q10-answers" id="q10-answers-C" value="C" />
-                        <label for="q10-answers-C">3</label>
+                        <label for="q10-answers-C">5</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="q10-answers" id="q10-answers-D" value="D" />
-                        <label for="q10-answers-D">4</label>
+                        <label for="q10-answers-D">7</label>
                     </div>
                 
                 </li>

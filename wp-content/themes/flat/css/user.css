@@ -3,8 +3,9 @@ body {
   margin: 0 0;
   background-color: #ececec;
   background-image: url("http://ausrcwa230/fxrs/wp-content/uploads/2016/01/new_year_background.png");
-  /*background-repeat: no-repeat;*/
-  /*background-attachment: fixed;
+  /*background-image: url("http://ausrcwa230/fxrs/wp-content/uploads/2015/11/winter1.jpg");*/
+  /*background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center center;
   background-size: cover;*/
 }
@@ -27,6 +28,12 @@ body::-webkit-scrollbar-thumb {
 /* End Scroll Bar */
 
 /* Templates for Image Size */
+
+.icon {
+  width: 100%;
+  height: 100%;
+  max-width: 100px!important;
+}
 
 .small {
   width: 100%;
@@ -168,8 +175,8 @@ table {
 /* WP Admin Bar */
 
 #wpadminbar {
-  top: inherit!important;
-  left: inherit!important;
+  top: initial!important;
+  /*left: inherit!important;*/
   bottom: 0!important;
   left: 25%!important;
   width: 50%!important;
@@ -653,6 +660,21 @@ section#singular {
   box-shadow: 0 4px 8px -4px #999;
 }
 
+section#singleCD {
+  background-color: white;
+  padding: 20px 80px;
+  margin: 0 50px 50px 50px;
+  -webkit-box-shadow: 0 4px 8px -4px #999;
+  -moz-box-shadow: 0 4px 8px -4px #999;
+  box-shadow: 0 4px 8px -4px #999;
+}
+
+.clock {
+  margin: 2em auto;
+  display: block;
+  width: 620px;
+}
+
 #singular h1 {
   color: #4D407A;
   text-align: center;
@@ -808,10 +830,14 @@ section#singular {
 }
 
 #single > article > p > img, #single > article img {
-/* width: 100%; */
   width: 100%;
   height: 100%;
   max-width: 600px;
+}
+
+img.icon {
+  height: 100%;
+  max-width: 75px!important;
 }
 
 .size-large {
@@ -1801,11 +1827,11 @@ table.tableizer-table > tbody > tr > td {
 
 /* PTO Table */
 
-#PTOTracker_20270 > table {
+#PTOTracker_123 > table {
   margin: 0;
 }
 
-#PTOTracker_20270 > table > tbody > tr:nth-child(1) > td {
+#PTOTracker_123 > table > tbody > tr:nth-child(1) > td {
   font: 16px 'Oxygen', Georgia, serif;
   font-weight: 200;
   height: 100%;
@@ -1965,6 +1991,7 @@ ul#breadcrumbs > li.item-current strong{
 #snow{
   font-family: Androgyne;
   background-image: url('http://ausrcwa230/fxrs/wp-content/uploads/2015/11/s2.png'), url('http://ausrcwa230/fxrs/wp-content/uploads/2015/11/s1.png');
+  /*background-image: url('http://ausrcwa230/fxrs/wp-content/uploads/2016/11/otono.png');*/
   left: 0;
   top: 0;
   width: 100%;

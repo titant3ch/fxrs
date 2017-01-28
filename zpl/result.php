@@ -37,18 +37,26 @@
 		$result = curl_exec($curl);
 
 		if (curl_getinfo($curl, CURLINFO_HTTP_CODE) == 200) {
-		    $file = fopen("label.png", "w");
-		    fwrite($file, $result);
-		    fclose($file);
+		    $k = 0;
+			while(!$label){
+			    if(!file_exists("label[$k].png"))
+			        $label = "label[$k].png";
+			    $k++;
+			}
+			$image = fopen("img/".$label, "w");
+
+		    fwrite($image, $result);
+		    fclose($image);
 		} else {
-		    print_r("Error: $result");
+		    print_r("<p id='errorString'>$result</p>");
+		    $error = "true";
 		}
 
 		curl_close($curl);
 
 	?>
-	<a href=".">Convert Another</a>
-	<img src="label.png" alt="label" id="<?php echo $loop; ?>">
+	<a class="convertALink" href=".">Convert Another</a>
+	<img src="img/<?php echo $label; ?>" alt="label" class="<?php echo $error; ?>" id="<?php echo $loop; ?>">
 
 </body>
 </html>

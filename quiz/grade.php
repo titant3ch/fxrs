@@ -43,18 +43,18 @@
 
 			$totalCorrect = 0;
 
-			if ($answer1  == "D") { $totalCorrect++; }
-			if ($answer2  == "C") { $totalCorrect++; }
-			if ($answer3  == "B") { $totalCorrect++; }
-			if ($answer4  == "D") { $totalCorrect++; }
+			if ($answer1  == "C") { $totalCorrect++; }
+			if ($answer2  == "B") { $totalCorrect++; }
+			if ($answer3  == "D") { $totalCorrect++; }
+			if ($answer4  == "A") { $totalCorrect++; }
 			if ($answer5  == "B") { $totalCorrect++; }
-			if ($answer6  == "A") { $totalCorrect++; }
-			if ($answer7  == "C") { $totalCorrect++; }
-			if ($answer8  == "D") { $totalCorrect++; }
+			if ($answer6  == "B") { $totalCorrect++; }
+			if ($answer7  == "D") { $totalCorrect++; }
+			if ($answer8  == "B") { $totalCorrect++; }
 			if ($answer9  == "D") { $totalCorrect++; }
-			if ($answer10 == "B") { $totalCorrect++; }
+			if ($answer10 == "C") { $totalCorrect++; }
 
-			$con = mysql_connect("127.0.0.1", "root", "Fedex123");
+			$con = mysql_connect("127.0.0.1", "root", "root");
 
 			if (!$con) {
 				$noDatabase = true;

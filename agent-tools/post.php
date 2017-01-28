@@ -17,7 +17,7 @@
 
   error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
-  $con = mysql_connect("127.0.0.1", "root", "Fedex123");
+  $con = mysql_connect("127.0.0.1", "root", "root");
 
   if (!$con) {
     $noDatabase = true;
@@ -26,39 +26,41 @@
 
   $noDatabase = !mysql_select_db("access", $con);
     
-  $sql = 'CREATE TABLE IF NOT EXISTS `Agent_Access` (`Agent` text NOT NULL, `Computer_Name` text NOT NULL, `Production_ESB` text NOT NULL, `Test_ESB` text NOT NULL, `Admin_Tool` text NOT NULL, `DLREQ` text NOT NULL) ENGINE=MyISAM DEFAULT CHARSET=utf8';
+  $sql = 'CREATE TABLE IF NOT EXISTS `Agent_Access` (`Agent` text NOT NULL, `Computer_Name` text NOT NULL, `Production_ESB` text NOT NULL, `Test_ESB` text NOT NULL, `Admin_Tool` text NOT NULL, `Time` text NOT NULL) ENGINE=MyISAM DEFAULT CHARSET=utf8';
   mysql_query($sql, $con);
 
   // Production ESB
 
   if (isset($_POST['prodESB'])) {
-    $prodESB = 'No';
+    $prodESB = 'No Access';
   } else {
-    $prodESB = 'Yes';
+    $prodESB = 'Access';
   }
 
   // Test ESB
   
   if (isset($_POST['testESB'])) {
-    $testESB = 'No';
+    $testESB = 'No Access';
   } else {
-    $testESB = 'Yes';
+    $testESB = 'Access';
   }
 
   // Admin Tool
   
   if (isset($_POST['adminTool'])) {
-    $adminTool = 'No';
+    $adminTool = 'No Access';
   } else {
-    $adminTool = 'Yes';
+    $adminTool = 'Access';
   }
 
-  // DLREQ
+  // No Issues
   
   if (isset($_POST['dlREQ'])) {
-    $dlREQ = 'No';
+    $adminTool = 'Access';
+    $prodESB = 'Access';
+    $testESB = 'Access';
   } else {
-    $dlREQ = 'Yes';
+    null;
   }
 
   // User Data
@@ -70,13 +72,17 @@
   $hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
   $hostname = strtolower($hostname);
 
-  $sql = "INSERT INTO Agent_Access (Agent, Computer_Name, Production_ESB, Test_ESB, Admin_Tool, DLREQ) VALUES (
+  // timeStamp
+
+  $time = date("g:ia m/d/y");
+
+  $sql = "INSERT INTO Agent_Access (Agent, Computer_Name, Production_ESB, Test_ESB, Admin_Tool, Time) VALUES (
     '" . mysql_real_escape_string($user, $con) . "',
     '" . mysql_real_escape_string($hostname, $con) . "',
     '" . mysql_real_escape_string($prodESB, $con) . "',
     '" . mysql_real_escape_string($testESB, $con) . "',
     '" . mysql_real_escape_string($adminTool, $con) . "',
-    '" . mysql_real_escape_string($dlREQ, $con) . "'
+    '" . mysql_real_escape_string($time, $con) . "'
     )";
   mysql_query($sql, $con);
 

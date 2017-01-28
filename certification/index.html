@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WIS Certification</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+body, input, textarea { color:#fff; background-color:#333; }
+a, a:hover, a:visited, a:active { color:lightblue; }
+</style>
+</head>
+<body>
+<a href="../">Back</a>
+<hr />
+
+<form id="certform">
+<p><label for="acctnum">Account #: </label><br /><input type="text" name="acctnum" id="acctnum" placeholder="123456789" /></p>
+<p><label for="meternum">Meter #: </label><br /><input type="text" name="meternum" id="meternum" placeholder="987654321" /></p>
+<p><label for="prodkey">Production key: </label><br /><input type="text" name="prodkey" id="prodkey" placeholder="hfjehfejwfhwejkfh" /></p>
+<p><label for="email">Email: </label><br /><input type="text" name="email" id="email" placeholder="person@example.com" /></p>
+<p><label for="company">Company: </label><br /><input type="text" name="company" id="company" placeholder="Acme Corp" /></p>
+<p><label for="contact">Contact: </label><br /><input type="text" name="contact" id="contact" placeholder="John Doe" /></p>
+<p><label for="phone">Phone: </label><br /><input type="text" name="phone" id="phone" placeholder="1234567890" /></p>
+<hr />
+
+<p>Will the customer's application be generating shipping labels?<br />
+	<input type="radio" name="shipping" id="shipping-yes" value="yes" /><label for="shipping-yes">Yes</label>
+	<input type="radio" name="shipping" id="shipping-no" value="no" /><label for="shipping-no">No</label>
+</p>
+<div id="ifshipping" style="display:none;">
+	<p>Will the customer be shipping Express, Ground, or both?<br />
+		<input type="radio" name="servicetype" id="servicetype-express" value="express" /><label for="servicetype-express">Express</label>
+		<input type="radio" name="servicetype" id="servicetype-ground" value="ground" /><label for="servicetype-ground">Ground</label>
+		<input type="radio" name="servicetype" id="servicetype-both" value="both" /><label for="servicetype-both">Both</label>
+	</p>
+	<p>Will the customer be generating...<br />
+		<input type="checkbox" name="cod" id="cod" value="COD" /><label for="cod">COD</label>
+		<input type="checkbox" name="intl" id="intl" value="International" /><label for="intl">International</label>
+		<input type="checkbox" name="mps" id="mps" value="MPS" /><label for="mps">MPS</label>
+	</p>
+</div>
+<p>Will the customer register as a...<br />
+	<input type="radio" name="devtype" id="devtype-corp" value="Corporate" /><label for="devtype-corp">Corporate developer</label>
+	<input type="radio" name="devtype" id="devtype-cons" value="Consultant" /><label for="devtype-cons">Consultant</label>
+</p>
+<div id="ifconsultant" style="display:none;">
+	<p><label for="conscompany">Consultant company</label><br />
+		<input type="text" name="conscompany" id="conscompany" placeholder="Foobar Corp" />
+	</p>
+	<p><label for="conscontact">Consultant contact</label><br />
+		<input type="text" name="conscontact" id="conscontact" placeholder="Jane Smith" />
+	</p>
+	<p><label for="consphone">Consultant phone</label><br />
+		<input type="text" name="consphone" id="consphone" placeholder="3216540987" />
+	</p>
+	<p><label for="consemail">Consultant email</label><br />
+		<input type="text" name="consemail" id="consemail" placeholder="jane@foobar.com" />
+	</p>
+</div>
+<p>Is the customer using a third party application or was the application built in house?<br />
+	<input type="radio" name="apptype" id="apptype-third" value="Third party" /><label for="apptype-third">Third party</label>
+	<input type="radio" name="apptype" id="apptype-inhouse" value="In house" /><label for="apptype-inhouse">In house</label>
+</p>
+<div id="ifthird" style="display:none;"><p><label for="appname">If using a 3rd party application what is the name of it?</label><br />
+	<input type="text" name="appname" id="appname" placeholder="SuperDuperAwesomeEpicShip" />
+</p></div>
+<p>Is the Customer requesting Pickup Services?<br />
+	<input type="radio" name="pickups" id="pickups-yes" value="yes" /><label for="pickups-yes">Yes</label>
+	<input type="radio" name="pickups" id="pickups-no" value="no" /><label for="pickups-no">No</label>
+</p>
+<button id="copy" type="button">Copy to clipboard</button>
+</form>
+
+<div style="height:100%; top:0px; right:0px; position:fixed;"><textarea style="height:300px; width:700px; white-space:pre;" id="output"></textarea><br /><button style="float:right;" id="copy2" type="button">Copy to clipboard</button></div>
+
+<script>
+function codintlmps(){
+	var outputs = [
+		$("input[name='cod']:checked").val(),
+		$("input[name='intl']:checked").val(),
+		$("input[name='mps']:checked").val()
+	];
+	return ($.grep(outputs, Boolean).join(", ") || "none");
+}
+function recalculate(){
+	if ($("#shipping-yes").is(':checked')) {
+		$("#ifshipping").show();
+	} else {
+		$("#ifshipping").hide();
+		$("#ifshipping input").prop('checked', false);
+	}
+
+	if ($("#apptype-third").is(':checked')) {
+		$("#ifthird").show();
+	} else {
+		$("#ifthird").hide();
+		$("#ifthird input").val("");
+	}
+
+	if ($("#devtype-cons").is(':checked')) {
+		$("#ifconsultant").show();
+	} else {
+		$("#ifconsultant").hide();
+	}
+
+	var outval = "";
+	outval += "Customer Production Account Number(s): "+$("#acctnum").val();
+	outval += "\nCustomer Production Meter Number(s): "+$("#meternum").val();
+	outval += "\nCustomer Production Key(s): "+$("#prodkey").val();
+	outval += "\nCustomer E-mail Address: "+$("#email").val();
+	outval += "\nCustomer Company Name: "+$("#company").val();
+	outval += "\nCustomer Contact Name (FIRST and LAST NAME): "+$("#contact").val();
+	outval += "\nCustomer Phone Number (Including area code): "+$("#phone").val();
+	outval += "\nWill the customer's application be generating shipping labels?: "+($("input[name='shipping']:checked").val() || "");
+	outval += "\nWill the customer be shipping Express, Ground, or both?: "+($("input[name='servicetype']:checked").val() || "n/a");
+	outval += "\nWill the customer be generating COD, International, or Multi-piece shipments (MPS)?: "+codintlmps();
+	outval += "\nWill the customer register as a 'Corporate Developer' or a 'Consultant'?: "+($("input[name='devtype']:checked").val() || "");
+	if ($("#devtype-cons").is(':checked')) {
+		outval += "\n  Consultant Company Name: "+$("#conscompany").val();
+		outval += "\n  Consultant Contact Name: "+$("#conscontact").val();
+		outval += "\n  Consultant Contact Phone Number: "+$("#consphone").val();
+		outval += "\n  Consultant Contact E-mail: "+$("#consemail").val();
+	}
+	outval += "\nIs the customer using a third party application or was the application built in house?: "+($("input[name='apptype']:checked").val() || "");
+	outval += "\nIf using a 3rd party application what is the name of it?: "+($("#appname").val() || "n/a");
+	outval += "\nIs the Customer requesting Pickup Services?: "+($("input[name='pickups']:checked").val() || "");
+	outval += "\n\nKB 10384";
+	$("#output").val(outval);
+};
+$("input").change(recalculate);
+
+function copypasta(){
+	$("#output")[0].select();
+	document.execCommand("copy");
+};
+$("#copy").click(copypasta);
+$("#copy2").click(copypasta);
+
+recalculate();
+</script>
+</body>
+</html>

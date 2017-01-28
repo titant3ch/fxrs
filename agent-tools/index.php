@@ -35,7 +35,7 @@
       <form name="myForm" action="post.php" method="post" onsubmit="return validateForm()">
 
         <section>
-          <p>Please indicate what tool(s) you <u>DONT</u> have access</p>
+          <p>Please indicate what tool(s) you <u>DONT</u> have access, if no issues please select "No Issues" option.</p>
         </section>
 
         <section class="container">
@@ -64,9 +64,9 @@
 
         <section class="container">
           <div>
-            <p>DLREQ</p>
-            <input type="checkbox" name="dlREQ" id="dlREQ">
-            <label for="dlREQ"></label>
+            <p>No issues</p>
+            <input type="checkbox" name="noIssues" id="noIssues">
+            <label for="noIssues"></label>
           </div>
         </section>
 

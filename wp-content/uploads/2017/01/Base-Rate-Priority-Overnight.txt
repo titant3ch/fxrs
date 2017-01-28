@@ -1,0 +1,1 @@
+0,"020"1,"Base Rate - Priority Overnight"7,"Austin"8,"TX"9,"78701"11,"FedEx"13,"Do Not Ship"14,"Do Not Ship"15,"Austin"16,"TX"17,"78701"18,"8004633339"23,"1"50,"US"57,"1"58,"1"59,"1"69,"100"75,"LBS"187,"46L"537,"C:\Fedex\Fedex_LabelBuffer"1273,"01"1274,"01"1670,"10"99,""
