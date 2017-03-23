@@ -1838,6 +1838,12 @@ table.tableizer-table > tbody > tr > td {
   padding: 9px 0;
 }
 
+div#PTOTracker_28279 {
+    display: block;
+    margin: 0 auto;
+    width: 854px;
+}
+
 /* Breadcrumbs*/
 
 ul#breadcrumbs {
